@@ -1,5 +1,6 @@
 package org.example;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -18,6 +19,7 @@ public class OrderService {
         return orderrepository.save(order);
         }
 
+    @Cacheable(value="orderCache")
     public List<Order> getAllOrders(){
         return orderrepository.findAll();
     }

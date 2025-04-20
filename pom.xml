@@ -43,6 +43,19 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+<!--        Enabling cache-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- Enable caching -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
